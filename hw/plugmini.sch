@@ -28,11 +28,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:microcontroller
+LIBS:audio_conn
+LIBS:codec
+LIBS:plugmini-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -43,21 +47,27 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5600 1500 1750 2250
+S 5950 800  1750 2250
 U 57346998
 F0 "Sheet57346997" 60
 F1 "../../plugmodules/audio/codec/tlv320aic3120.sch" 60
 $EndSheet
 $Sheet
-S 8050 1500 1750 1650
+S 8400 850  1750 1650
 U 57346A81
 F0 "Sheet57346A80" 60
 F1 "../../plugmodules/audio/analog/codec_input_se2diff.sch" 60
 $EndSheet
 $Sheet
-S 1600 2900 1600 950 
+S 800  6450 1600 950 
 U 57346B4B
 F0 "Sheet57346B4A" 60
 F1 "../../plugmodules/power/ldo-sot23-5-3v3at300ma.sch" 60
+$EndSheet
+$Sheet
+S 2150 800  1850 4100
+U 57346DA5
+F0 "Sheet57346DA4" 60
+F1 "../../plugmodules/processing/mkl26zxxvlh4.sch" 60
 $EndSheet
 $EndSCHEMATC
