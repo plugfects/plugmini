@@ -65,9 +65,9 @@ F0 "Sheet57346B4A" 60
 F1 "../../plugmodules/power/ldo-sot23-5-3v3at300ma.sch" 60
 $EndSheet
 $Sheet
-S 2150 800  1850 4100
-U 57346DA5
-F0 "Sheet57346DA4" 60
-F1 "../../plugmodules/processing/mkl26zxxvlh4.sch" 60
+S 2050 1150 1900 3250
+U 573775F2
+F0 "Processor" 60
+F1 "../../plugmodules/processing/atsam4ls2a.sch" 60
 $EndSheet
 $EndSCHEMATC
