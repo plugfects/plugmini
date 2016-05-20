@@ -1,4 +1,4 @@
-update=Sex 13 Mai 2016 08:00:46 BRT
+update=Seg 16 Mai 2016 07:48:39 BRT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../pluglib/processing;../../pluglib/audio;../../pluglib/power
+LibDir=../../pluglib/processing;../../pluglib/audio;../../pluglib/power;../../pluglib/analog
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,3 +61,4 @@ LibName29=valves
 LibName30=microcontroller
 LibName31=audio_conn
 LibName32=codec
+LibName33=ampop
