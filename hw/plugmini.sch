@@ -32,12 +32,15 @@ LIBS:microcontroller
 LIBS:audio_conn
 LIBS:codec
 LIBS:ampop
+LIBS:esdprotection
+LIBS:touch_probes
+LIBS:connectors
 LIBS:plugmini-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -93,6 +96,12 @@ F3 "ISDI" I R 4900 1800 60
 F4 "ISWS" O R 4900 1700 60 
 F5 "ISD0" O R 4900 1900 60 
 F6 "ISMK" O R 4900 1500 60 
+F7 "D+" B L 3000 1150 60 
+F8 "D-" B L 3000 1250 60 
+F9 "SPI_CLK" O L 3000 2300 60 
+F10 "MISO" I L 3000 2500 60 
+F11 "MOSI" O L 3000 2400 60 
+F12 "~SS" O L 3000 2600 60 
 $EndSheet
 Wire Wire Line
 	8300 1050 7700 1050
@@ -141,4 +150,35 @@ Wire Wire Line
 	4900 1800 5950 1800
 Wire Wire Line
 	5950 1900 4900 1900
+$Sheet
+S 750  1000 1350 750 
+U 573EEB96
+F0 "USB" 60
+F1 "../../plugmodules/comm/usb.sch" 60
+F2 "D+" B R 2100 1150 60 
+F3 "D-" B R 2100 1250 60 
+F4 "VBUS" I R 2100 1050 60 
+$EndSheet
+Wire Wire Line
+	2100 1150 3000 1150
+Wire Wire Line
+	3000 1250 2100 1250
+$Sheet
+S 750  2150 1400 900 
+U 573F0326
+F0 "SD" 60
+F1 "../../plugmodules/storage/sdcard.sch" 60
+F2 "SPI_CLK" I R 2150 2300 60 
+F3 "MOSI" I R 2150 2400 60 
+F4 "MISO" O R 2150 2500 60 
+F5 "~SS" I R 2150 2600 60 
+$EndSheet
+Wire Wire Line
+	3000 2600 2150 2600
+Wire Wire Line
+	2150 2500 3000 2500
+Wire Wire Line
+	3000 2400 2150 2400
+Wire Wire Line
+	2150 2300 3000 2300
 $EndSCHEMATC
